@@ -1,0 +1,169 @@
+/* reset */
+html,body,div,ul,li,h1,h2,h3,h4,h5,h6,p{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6,a{font-weight:normal;font-family:sans-serif,arial;}
+a{color:#000;text-decoration:none;}
+li{list-style:none;}
+h1{font-size:18px;}
+h2{font-size:16px;}
+
+/* 统一清除浮动 */
+.g-hd ul:after,.m-course:after,.m-list:after,.u-list .news li:after{
+	display:table;
+	content:'';
+	clear:both;
+}
+.g-hd ul,.m-course,.m-list,.u-list .news li{
+	*zoom:1;
+}
+
+/* 布局（.g-） */
+.g-doc{
+	width:100%;
+	background:#fefefe;
+}
+.g-wrap{
+	width:1000px;
+	margin:0 auto;
+}
+.g-hd{
+	height:70px;
+	line-height:70px;
+}
+.g-hd .logo,.g-hd li{
+	float:left;
+}
+.g-hd .logo{
+	block-size:70px;
+}
+.g-hd li{
+	width:100px;
+	text-align:center;
+}
+.g-hd a{
+	display:block;
+	font-size:18px;
+}
+.g-hd a:hover{
+	background:#bd3847;
+}
+.g-bd{
+	margin:5px 0;
+}
+.g-ft{
+	/* padding不支持auto属性值 */
+	padding:30px 0 12px;
+	background:#e7e7e7;
+	text-align:center;
+}
+.g-ft p{
+	font-size:18px;
+}
+
+/* 模块（.m-） */
+.m-sld{position:relative;height:310px;/*overflow:hidden;*/}
+.m-sld .pic
+.m-sld img{vertical-align:middle;}
+.m-news,.m-course,.m-list{
+	margin-top:20px;
+}
+.m-news{
+	line-height:38px;
+}
+.m-news h2{
+	float:left;
+	width:150px;
+	height:38px;
+	color:#FFF;
+	text-align:center;
+	background:#bd3847;
+}
+.m-news ul{
+	height:38px;
+	padding-left:20px;
+	background:#3e3e3e;
+	overflow:hidden;
+}
+.m-news a{
+	font-size:16px;
+	color:#FFF;
+}
+
+/* 元件（.u-） */
+.u-course,.u-list{
+	float:left;
+	margin-right:5px;
+}
+.u-course:last-child,.u-list:last-child{
+	margin-right:0;
+}
+.u-course img{
+	vertical-align:middle;
+}
+.u-course h1{
+	height:28px;
+	line-height:28px;
+	text-align:center;
+	border:1px solid #e7e7e7;
+}
+.u-list{
+	width:328px;
+	height:298px;
+	border:1px solid #e7e7e7;
+}
+.u-list h2{
+	height:40px;
+	color:#FFF;
+	line-height:40px;
+	padding-left:20px;
+	background:#bd3847;
+}
+.u-list .news{
+	padding:10px 5px;
+}
+.u-list .news li{
+	/*margin-top:5px;*/
+	border-bottom:1px solid #e7e7e7;
+}
+.u-list .news span{
+	display:block;
+	float:left;
+	width:28px;
+	height:30px;
+	color:#FFF;
+	font-size:12px;
+	padding:15px 11px;
+	margin-top:10px;
+	border-radius:4px;
+	background:#bd3847;
+}
+.u-list .plan{
+	float:left;
+	width:250px;
+	color:#3e3d3d;
+	font-size:13px;
+	padding:8px 9px;
+}
+.u-list .plan a{
+	display:block;
+	font-weight:bold;
+	margin:-2px 0 13px;
+}
+.u-list .activity{
+	padding:24px 24px 0;
+}
+.u-list .activity img{
+	width:280px;
+	height:120px;
+	vertical-align:middle;
+}
+.u-list .activity ul{
+	margin:5px 0;
+}
+.u-list .contact{
+	padding:3px 6px 0;
+	font-size:16px;
+	line-height:21px;
+}
+.u-list .contact .recruit,.u-list .contact .cooperate{
+	padding:3px 0 20px;
+}
